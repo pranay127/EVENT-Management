@@ -1,0 +1,52 @@
+1000,NAME,100,10100
+1001, lakshmiNarayan Baug,200,10101
+1002,sohrab palakote hall,300,10102
+1003,kutchi Gurjar Wadi,400,10103
+1004,shree Halari Visa oswal Samaj,500,10104
+1005,shirodkar hall,600,10105
+1006,"vithal Mandir (Trust) Hall
+",700,10106
+1007,shivaji Natya Mandir,800,10107
+1008,shagun Banquets,900,10108
+1009,damodar halls,1000,10109
+1010,Punjab Association Hall,1100,10110
+1011,Dr Antonio da Silva Trust Hall,1200,10111
+1012,"
+Dwadashi Hall",1300,10112
+1013,Blue Lagoon The,1400,10113
+1014,Samadhan Hall & Restaurant ,1500,10114
+1015,Utsav Restaurant & Banquets,1600,10115
+1016,Grass Restaurant,1700,10116
+1017,Grant Cuisine,1800,10117
+1018,Nebula Gourmet Express Restaurant ,1900,10118
+1019,Veg Always Restaurant ,2000,10119
+1020,Blue Sea Banquets,2100,10120
+1021,Rajdoot Hotel,2200,10121
+1022,Jade Garden Banquet Hall ,2300,10122
+1023,Kashinath dhuru hall,2400,10123
+1024,Mumbai Aarya Vaishya Sangam,2500,10124
+1025,B N Vaidya Banquet Hall,2600,10125
+1026,Guru Nanak National Auditorium,2700,10126
+1027,Rachana Sansad,2800,10127
+1028,Shanmukhananda Auditorium,2900,10128
+1029,G.S.B. Seva Mandal,3000,10129
+1030,Apna bazar banquet hall,3100,10130
+1031,Manisha Apartments,3200,10131
+1032,Peninsula Restaurant,3300,10132
+1033,Rosewood Hotel ,3400,10133
+1034,Sunville Banquets,3500,10134
+1035,Status Restaurant ,3600,10135
+1036,J.K. Banquets ,3700,10136
+1037,Hotel Shantiidoot,3800,10137
+1038,City Point Hotel ,3900,10138
+1039,Comfort inn heritage hotel ,4000,10139
+1040,Midtown Pritam Hotel ,4100,10140
+1041,Tote Banquet ,4200,10141
+1042,Hotel Avon Ruby,4300,10142
+1043,Hiltop Hotel,4400,10143
+1044,MATUNGA GUJARATI CLUB LTD.,4500,10144
+1045,"Mayfair Banquets 
+",4600,10145
+1046,Kohinoor Banquet hall,4700,10146
+1047,Stallion Banquets,4800,10147
+1048,Copper Chimney Restaurant ,4900,10148

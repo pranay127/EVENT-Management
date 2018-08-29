@@ -1,0 +1,43 @@
+
+body {text-align: center;
+	background-image: url(ileana.jpg);
+	background-position: fixed;
+
+	 }
+h1 {color: maroon;
+	text-align: left;
+	font-size: 65px;
+	padding: 20px auto;
+
+	}
+#wrapper {
+	border: 2px solid black;
+	width: 100%;
+	padding: 20px;
+	margin: 20px auto;
+	height: 600px;
+}
+#navigation li{
+	display: inline-block;
+	text-align: left;
+
+}
+#main {float: left;
+
+}
+#side {
+	border: 2px solid black;
+	width: 250px;
+	float: right;
+}
+#the_footer {
+	clear: both;
+	text-align: center;
+	border-top: 2px solid black;
+	margin-top: 400px;
+	padding-top: 2px;
+}
+/*p {position: absolute;
+	font-style: italic;
+
+  }

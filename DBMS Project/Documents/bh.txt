@@ -1,0 +1,9 @@
+create table caterer( catererID int(50) auto_increment,
+                      caterername varchar(200),
+                      address varchar(200),
+                      rating int(2),
+                      locality varchar(50),
+                      cost varchar(20),
+		      contact int(50),                     
+                      primary key(catererID)
+                     )auto_increment=1;

@@ -1,0 +1,21 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#wrap {
+	text-align: center;
+	border: 2px solid black;
+	margin: 600px auto;
+
+}
+
+#top_header li{display: inline-block;
+
+}
+
+#the_table {
+	border: 2px solid black;
+	text-align: center;
+	align-self: center;
+}

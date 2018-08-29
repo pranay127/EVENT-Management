@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+  <link href="owner form.css" type="text/css" rel="stylesheet">
+  <?php
+  $servername = "localhost";
+$username = "root";
+$password = "";
+$db_name="eventmanagement";
+$conn = mysqli_connect($servername, $username, $password,$db_name);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+else
+
+	$pwd = $_POST["pwd"];
+	$s =" insert into owner(ownerID,ownerFirstName,ownerLastName,ownerpassword,ownerDOB,hallID,age)
+	       values($name,$lastname,$dob,$age,$hallID)"
+	$res = $conn->query($s);
+	$r = $res->fetch_assoc();
+	echo"
+  <body background-color="gray">
+  <div class="form1">
+	<center>
+		<form action="next form.html" method="get">
+                        <b>First Name  </b><input type="text" name="name" placeholder="your first name"><br><br>
+                        <b>Last Name   </b><input type="text" name="lastname" placeholder="your last name"><br><br>
+                        <b>DOB         </b><input type="text" name="dob" placeholder="your dob"><br><br>
+						<b>Age         </b><input type="text" name="age" placeholder="your age"><br><br>
+						<b>Password</b><input type="text" name="no.of halls owned"><br><br>
+						<input type="submit" value="Register hall">
+		</form>
+					<form action=" caterer form.html" method="get">
+					<input type="submit" value="Register Caterer">
+					</form>
+	</div>
+</center>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: blue;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border:2px;
+    border-radius: 4px;
+    cursor: pointer;
+	font-size:30px;
+	font-weight:bold;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</body>"
+?>
+  
+</html>

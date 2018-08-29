@@ -1,0 +1,126 @@
+
+create database event;
+
+use event;
+
+create table user ( FirstName varchar(30),
+                    LastName varchar(30),
+                    EmailID varchar(20),
+                    primary key (EmailID)
+                  );
+
+create table owner( ownerID int(10),
+                    ownerFirstName varchar(30),
+		    ownerLastName varchar(30),
+		    ownerpassword int(15),
+ 	            ownerDOB int(10),
+                    hallID int(10),
+                    age int(5),
+                    primary key(ownerID) 
+                   );
+create table ownerContact ( ownerID int(10),
+                            contactNo int(10),
+                            primary key(ownerID),
+                            foreign key(ownerID) references owner(ownerID)
+                          );
+create table hall ( hallID int(5),
+                    hallName varchar(20),
+                    hallcapacity int(8),
+                    ownerID int(10),
+                    primary key(hallID),
+                    foreign key(ownerID) references owner(ownerID)
+                   );
+create table hallAddress( hallID int(5),
+                          hallLocality varchar(20),
+                          hallcity varchar(20),
+                          primary key(hallID),
+                          foreign key(hallID) references hall(hallID)
+                         );
+create table hallType( hallID int(5),
+                       Type varchar(10),
+                       primary key(hallID),
+                       foreign key(hallID) references hall(hallID) 
+                     );
+create table hallCatering( hallID int(5),
+                           cost int(6),
+                           primary key(hallID),
+                           foreign key(hallID) references hall(hallID)
+                         );
+create table caterer(catererID int(5),
+                      firstName varchar(20),
+                      lastName varchar(20),
+                      address varchar(30),
+                      catererEmailID varchar(20),
+                      cost int(5),
+                      primary key(catererID)
+                     );
+create table catererContact(catererID int(5),
+                            contact int(10),
+                            primary key(catererID),
+                            foreign key(catererID) references caterer(catererID)
+                           ); 
+create table hallRent( hallID int(5),
+                       Rent int(8),
+                       primary key(hallID),
+                       foreign key(hallID) references hall(hallID)
+                      );
+create table decoration( hallID int(5),
+                         flower varchar(9),
+                         light varchar(9),
+                         curtains varchar(9),
+                         chair varchar(9),
+                         primary key(hallID),
+                         foreign key(hallID) references hall(hallID)
+                         );
+create table schedule( hallID int(5), 
+                       RequestDayAvailable varchar(5),
+                       PreviousDayAvailable varchar(5),
+                       NextDayAvailable varchar(5),
+                       primary key(hallID), 
+                       foreign key(hallID) references hall(hallID)
+                       );
+create table feedback( hallID int(5),
+                       rating int(10),
+                       comment varchar(40),
+                       complaints varchar(40),
+                       primary key(hallID), 
+                       foreign key(hallID) references hall(hallID)
+                        ); 
+create table security( hallID int(5),
+                       Watchmen varchar(30),
+                       CCTV varchar(30),
+                       primary key(hallID), 
+                       foreign key(hallID) references hall(hallID)
+                     );
+
+
+insert into user values("Sanket","Dhabale","sanket22@gmail.com");
+
+insert into user values("Gajendra","Devkate","gpatil@gmail.com");
+
+insert into user values("Pranay","Manthanwar","pranay@gmail.com");
+
+insert into owner values(15001,"Sandesh","Nagrale",15233,65,04061978,27);
+
+insert into owner values(15002,"pranay","manthanwar",15933,55,01111978,27);
+
+insert into owner values(15003,"chetan","chavhan",15833,65,04061978,27);
+
+insert into ownerContact values(15001,665845);
+
+insert into ownerContact values(15002,658445);
+
+insert into ownerContact values(15003,684592);
+
+insert into hall values(04061978,"Desmond halls",450,15001);
+
+insert into hall values(01111978,"Marvel halls",500);
+
+insert into hall values(04061978,"Rajesh halls",350);
+
+
+
+
+
+
+

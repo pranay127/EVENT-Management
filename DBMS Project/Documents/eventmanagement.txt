@@ -1,0 +1,77 @@
+create database EventManagement;
+
+use EventManagement;
+
+create table user ( FirstName varchar(100),
+                    LastName varchar(100),
+                    EmailID varchar(50),
+                    primary key (EmailID)
+                  );
+
+create table owner( ownerID int(50) auto_increment,
+                    ownerFirstName varchar(100),
+		    ownerLastName varchar(100),
+		    ownerpassword int(50),
+ 	            ownerDOB int(10),
+                    hallID int(50),
+                    age int(5),
+                    primary key(ownerID)
+                   )auto_increment=1;
+
+create table hall ( hallID int(50) auto_increment,
+                    hallName varchar(100),
+                    contactNo int(10),
+                    hallCapacity varchar(50),
+		    rating int(50)
+                    ownerID int(50),
+                    hallAddress varchar(200),
+                    primary key(hallID),
+                    cost  int(5),
+                    catering int(1) default '0',
+                    foreign key(ownerID) references owner(ownerID) on delete cascade
+                   )auto_increment=1;
+
+create table caterer( catererID int(50),
+                      Name varchar(200),
+                      address varchar(200),
+                      cost varchar(20),
+		      contact int(50),
+                      locality varchar(50),
+                      primary key(catererID)
+                     );
+
+create table decoration( hallID int(50),
+                         flower varchar(10),
+                         light varchar(10),
+                         curtains varchar(9),
+                         chair varchar(9),
+                         primary key(hallID),
+                         foreign key(hallID) references hall(hallID)
+                         );
+create table schedule( hallID int(5), 
+                       RequestDayAvailable varchar(10),
+                       PreviousDayAvailable varchar(10),
+                       NextDayAvailable varchar(10),
+                       primary key(hallID), 
+                       foreign key(hallID) references hall(hallID)
+                       );
+create table feedback( hallID int(50),
+                       rating int(10),
+                       comment varchar(500),
+                       complaints varchar(400),
+                       primary key(hallID), 
+                       foreign key(hallID) references hall(hallID)
+                        ); 
+create table security( hallID int(50),
+                       Watchmen varchar(30),
+                       CCTV varchar(30),
+                       primary key(hallID), 
+                       foreign key(hallID) references hall(hallID)
+                     );
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+header, section, footer, nav, aside, {
+	display: block;
+}
+body {
+	text-align: center;
+	background-image: url(Mumbai-wallpaper-14-9-1.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#the_header {
+	border: 1px solid blue;
+	padding: 20px;
+
+
+}
+#the_navigation {
+	border-bottom: 1px solid black;
+	padding: 5px;
+
+}
+#the_navigation li{
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+}
+#the_div { 
+	margin: 20px auto;
+	border: 2px solid black;
+	width: 1000px;
+	text-align: left;
+	
+}
+#the_section {
+	float: left;
+	width: 660px;
+	margin: 30px;
+
+
+}
+#side_news {
+	float: left;
+	width: 220px;
+	margin: 20px 0px;
+	padding: 30px;
+
+}
+#the_footer {
+	border: 1px solid black;
+	clear: both;
+	text-align: center;
+}
+input[type=text] {
+	padding: 6px;
+	box-sizing: border-box;
+}
+textarea {
+	width: 100%;
+	height: 15px;
+}
